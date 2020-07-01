@@ -21,7 +21,7 @@ def get_count():
 
 def append_data(time, count):
     output_file = open("output.txt", "a")
-    output_file.write(f"{time},{count}\n")
+    output_file.write(str(time) + "," + count + "\n")
     output_file.close()
 
 
